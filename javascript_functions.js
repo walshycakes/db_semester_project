@@ -83,12 +83,15 @@ function sndDeleteReq(action) {
 
 			//$('#' + table + '_row_' + id).fadeOut('slow');
 			//this new line was added in v5.4 to support vertical layout
-			$("tr[id^=" + table + "_row_" + id +"]").fadeOut('slow');
+			//$("tr[id^=" + table + "_row_" + id +"]").fadeOut('slow'); //commented this line out it kept breaking
 			updateRowCount(table);
-			window.location.reload(true); //ADDED THIS BECAUSE IT WASNT UPDATING... BRYAN WALSH 11//19
+
+			window.location.reload(true); //works now.
 		}
 	}
+
     http.send(null);
+
 }
 
 /* Ajax Adding */
@@ -108,6 +111,7 @@ function sndAddReq(action, table) {
 				}
 			}
 			add_http.send(null);
+
 		}
  	}
     http.send(null);
@@ -126,9 +130,11 @@ function sndFilterReq(action, table) {
 					//$("#" + table).html(table_html); //maybe use this method some day if helpful
 					doValidation(); //rebind any validation functions to the new elements
 					updateRowCount(table);
+
 				}
 			}
 			filter_http.send(null);
+
 		}
 	}
 
@@ -237,7 +243,7 @@ function filterTable(obj, table, field, query_string){
 function confirmDelete(id, table, pk){
 	if(confirm('Are you sure you want to delete this item from the database? This cannot be undone.')) {
 		ajax_deleteRow(id, table, pk);
-
+	
 	}
 }
 function deleteFile(field, id){
@@ -249,6 +255,7 @@ function deleteFile(field, id){
 function ajax_deleteRow(id, table, pk){
 	var req = ajax_file + '?ajaxAction=delete&id=' + id + '&table=' + table + '&pk=' + pk;
 	sndDeleteReq(req);
+	
 }
 
 //for handling all ajax editing
