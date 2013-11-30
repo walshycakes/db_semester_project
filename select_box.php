@@ -9,7 +9,6 @@
     <body>
     
         <select name="table_choice" id="table_choice" style="span3">
-            <options>
             <option selected="selected"><b>---- Choose a table ----</b></option>
             <option value="band">Bands</option>
             <option value="band_member">Band members</option>
