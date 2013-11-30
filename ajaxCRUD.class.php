@@ -2059,7 +2059,7 @@ class ajaxCRUD{
 			</form>
 		</span>
         <span style=\"display: none;\" id=\"" . $prefield . "_save\" class=\"savingAjaxWithBackground\">Saving...</span>";
-
+       
         return $return_html;
 
 	}//makeAjaxEditor

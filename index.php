@@ -1,6 +1,10 @@
-<html lang="en">
-	
-	<head>
+<?php
+	// if ($user_login == false){
+	// 	header('Location: ./login.php');
+	// }
+	?>
+
+<html>
 		<meta http-equiv="content-type" content="text/html; charset=UTF-8"> 
             <title></title>
             <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.min.css" rel="stylesheet">
@@ -16,7 +20,12 @@
 			<h3><u> Information Editor </u></h3>
 			<p><i> Select a table to modify </i></p>
 			<?php include('select_box.php'); ?>
-		<div>
+		</div>
+
+		<div class="span6" style="float:left" id="xml_button">
+			<button type="submit" class="btn btn-info" onClick="location.href = './xml_out.php'">Export Database in XML</button>
+		</div>
+
 
 	</body>
 </html>
