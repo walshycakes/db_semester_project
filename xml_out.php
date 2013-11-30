@@ -62,11 +62,7 @@ if(mysql_num_rows($result))
 	$xml.= '</database>';
 	
 	//save file
-	$handle = fopen($name.'.xml','w+');
-	fwrite($handle,$xml);
-	fclose($name.'.xml');
-	//echo $handle;
-	header("Location: ./".$name.'.xml');
-	
+	header("Content-type: text/xml"); 
+	echo $xml;
 
 }?>

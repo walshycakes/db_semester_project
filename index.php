@@ -16,17 +16,23 @@
 	<body>
 		<h1> DB Semester Project </h1>
         <h2> Music Information Tracker </h2>
-		<div class="span12" style="float:left" id="table_nav">
+		<div class="span4" style="float:left" id="table_nav">
 			<h3><u> Information Editor </u></h3>
-			<p><i> Select a table to modify </i></p>
+			<p><i>Add music information below.<br>
+				 Select a table to modify </i></p>
 			<?php include('select_box.php'); ?>
 		</div>
 
 		<div class="row-fluid span4" style="float:left" id="xml_buttons">
 			<h3><u> Export Options (XML) </u></h3>
-			<button type="submit" class="btn btn-info span2" onClick="location.href = './xml_out.php'">Export data</button>
-			<button type="submit" class="btn btn-warning span2" onClick="location.href = './xml_schema_out.php'">Export schema</button>
+			<p style="padding-bottom: 20px"><i>Export either the data or just the schema in XML format. <br>
+				File displays in a new tab. Hit Ctrl+S to save as the .xml file </i></p>
+
+			<button type="submit" class="btn btn-info span2" onClick="window.open('./xml_out.php')">Export data</button>
+			<button type="submit" class="btn btn-warning span2" onClick="window.open('./xml_schema_out.php')">Export schema</button>
 		</div>
+
+		<div class=span
 
 
 	</body>
