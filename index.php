@@ -22,8 +22,10 @@
 			<?php include('select_box.php'); ?>
 		</div>
 
-		<div class="span6" style="float:left" id="xml_button">
-			<button type="submit" class="btn btn-info" onClick="location.href = './xml_out.php'">Export Database in XML</button>
+		<div class="row-fluid span4" style="float:left" id="xml_buttons">
+			<h3><u> Export Options (XML) </u></h3>
+			<button type="submit" class="btn btn-info span2" onClick="location.href = './xml_out.php'">Export data</button>
+			<button type="submit" class="btn btn-warning span2" onClick="location.href = './xml_schema_out.php'">Export schema</button>
 		</div>
 
 
