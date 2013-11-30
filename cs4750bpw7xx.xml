@@ -1,0 +1,826 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database name="cs4750bpw7xx">
+	<table name="album">
+		<columns>
+			<column name="id" blob="0" maxlength="" multiple_key="0" not_null="1" numeric="1" primary_key="1" table="album" type="int" default="" unique_key="0" unsigned="0" zerofill="0" />
+			<column name="name" blob="0" maxlength="" multiple_key="0" not_null="1" numeric="0" primary_key="0" table="album" type="string" default="" unique_key="0" unsigned="0" zerofill="0" />
+			<column name="band" blob="0" maxlength="" multiple_key="0" not_null="1" numeric="0" primary_key="0" table="album" type="string" default="" unique_key="0" unsigned="0" zerofill="0" />
+			<column name="year" blob="0" maxlength="" multiple_key="0" not_null="1" numeric="1" primary_key="0" table="album" type="int" default="" unique_key="0" unsigned="0" zerofill="0" />
+			<column name="genre" blob="0" maxlength="" multiple_key="0" not_null="1" numeric="0" primary_key="0" table="album" type="string" default="" unique_key="0" unsigned="0" zerofill="0" />
+		</columns>
+		<records>
+			<record>
+				<id>1</id>
+				<name>Led Zeppelin</name>
+				<band>Led Zeppelin</band>
+				<year>1969</year>
+				<genre>Rock</genre>
+			</record>
+			<record>
+				<id>2</id>
+				<name>Houses of the Holy</name>
+				<band>Led Zeppelin</band>
+				<year>1973</year>
+				<genre>Rock</genre>
+			</record>
+			<record>
+				<id>3</id>
+				<name>The College Dropout</name>
+				<band>Kanye West</band>
+				<year>2004</year>
+				<genre>Hip Hop</genre>
+			</record>
+			<record>
+				<id>4</id>
+				<name>Yeezus</name>
+				<band>Kanye West</band>
+				<year>2013</year>
+				<genre>Hip Hop</genre>
+			</record>
+			<record>
+				<id>5</id>
+				<name>Manners</name>
+				<band>Passion Pit</band>
+				<year>2009</year>
+				<genre>Alternative</genre>
+			</record>
+			<record>
+				<id>6</id>
+				<name>Gossamer</name>
+				<band>Passion Pit</band>
+				<year>2012</year>
+				<genre>Alternative</genre>
+			</record>
+			<record>
+				<id>7</id>
+				<name>Californication</name>
+				<band>Red Hot Chili Peppers</band>
+				<year>1999</year>
+				<genre>Rock</genre>
+			</record>
+			<record>
+				<id>8</id>
+				<name>By the Way</name>
+				<band>Red Hot Chili Peppers</band>
+				<year>2002</year>
+				<genre>Rock</genre>
+			</record>
+			<record>
+				<id>9</id>
+				<name>Reasonable Doubt</name>
+				<band>Jay-Z</band>
+				<year>1996</year>
+				<genre>Hip Hop</genre>
+			</record>
+			<record>
+				<id>10</id>
+				<name>Magna Carta Holy Grail</name>
+				<band>Jay-Z</band>
+				<year>2013</year>
+				<genre>Hip Hop</genre>
+			</record>
+			<record>
+				<id>11</id>
+				<name>Alphabetical</name>
+				<band>Phoenix</band>
+				<year>2004</year>
+				<genre>Alternative</genre>
+			</record>
+			<record>
+				<id>12</id>
+				<name>Wolfgang Amadeus Phoenix</name>
+				<band>Phoenix</band>
+				<year>2009</year>
+				<genre>Alternative</genre>
+			</record>
+		</records>
+	</table>
+	<table name="award">
+		<columns>
+			<column name="id" blob="0" maxlength="" multiple_key="0" not_null="1" numeric="1" primary_key="1" table="award" type="int" default="" unique_key="0" unsigned="0" zerofill="0" />
+			<column name="award" blob="0" maxlength="" multiple_key="0" not_null="1" numeric="0" primary_key="0" table="award" type="string" default="" unique_key="0" unsigned="0" zerofill="0" />
+			<column name="band" blob="0" maxlength="" multiple_key="0" not_null="1" numeric="0" primary_key="0" table="award" type="string" default="" unique_key="0" unsigned="0" zerofill="0" />
+			<column name="year" blob="0" maxlength="" multiple_key="0" not_null="1" numeric="1" primary_key="0" table="award" type="int" default="" unique_key="0" unsigned="0" zerofill="0" />
+		</columns>
+		<records>
+		</records>
+	</table>
+	<table name="band">
+		<columns>
+			<column name="id" blob="0" maxlength="" multiple_key="0" not_null="1" numeric="1" primary_key="1" table="band" type="int" default="" unique_key="0" unsigned="0" zerofill="0" />
+			<column name="name" blob="0" maxlength="" multiple_key="0" not_null="1" numeric="0" primary_key="0" table="band" type="string" default="" unique_key="0" unsigned="0" zerofill="0" />
+			<column name="record_label" blob="0" maxlength="" multiple_key="0" not_null="1" numeric="0" primary_key="0" table="band" type="string" default="" unique_key="0" unsigned="0" zerofill="0" />
+			<column name="genre" blob="0" maxlength="" multiple_key="0" not_null="1" numeric="0" primary_key="0" table="band" type="string" default="" unique_key="0" unsigned="0" zerofill="0" />
+		</columns>
+		<records>
+			<record>
+				<id>16</id>
+				<name>Passion PIt</name>
+				<record_label>Columbia</record_label>
+				<genre>Alternative</genre>
+			</record>
+			<record>
+				<id>17</id>
+				<name>Led Zeppelin</name>
+				<record_label>Atlantic</record_label>
+				<genre>Rock</genre>
+			</record>
+			<record>
+				<id>18</id>
+				<name>Phoenix</name>
+				<record_label>Glassnote</record_label>
+				<genre>Alternative</genre>
+			</record>
+			<record>
+				<id>19</id>
+				<name>Kanye West</name>
+				<record_label>Def Jam</record_label>
+				<genre>Hip Hop</genre>
+			</record>
+			<record>
+				<id>20</id>
+				<name>Jay-Z</name>
+				<record_label>Def Jam</record_label>
+				<genre>Hip Hop</genre>
+			</record>
+			<record>
+				<id>21</id>
+				<name>Red Hot Chili Peppers</name>
+				<record_label>Warner Bros.</record_label>
+				<genre>Rock</genre>
+			</record>
+		</records>
+	</table>
+	<table name="band_member">
+		<columns>
+			<column name="id" blob="0" maxlength="" multiple_key="0" not_null="1" numeric="1" primary_key="1" table="band_member" type="int" default="" unique_key="1" unsigned="0" zerofill="0" />
+			<column name="first_name" blob="0" maxlength="" multiple_key="0" not_null="1" numeric="0" primary_key="0" table="band_member" type="string" default="" unique_key="0" unsigned="0" zerofill="0" />
+			<column name="last_name" blob="0" maxlength="" multiple_key="0" not_null="1" numeric="0" primary_key="0" table="band_member" type="string" default="" unique_key="0" unsigned="0" zerofill="0" />
+			<column name="band" blob="0" maxlength="" multiple_key="0" not_null="1" numeric="0" primary_key="0" table="band_member" type="string" default="" unique_key="0" unsigned="0" zerofill="0" />
+		</columns>
+		<records>
+			<record>
+				<id>1</id>
+				<first_name>Anthony</first_name>
+				<last_name>Kieldis</last_name>
+				<band>Red Hot Chili Peppers</band>
+			</record>
+			<record>
+				<id>2</id>
+				<first_name>Flea</first_name>
+				<last_name>Flea</last_name>
+				<band>Red Hot Chili Peppers</band>
+			</record>
+			<record>
+				<id>3</id>
+				<first_name>Chad</first_name>
+				<last_name>Smith</last_name>
+				<band>Red Hot Chili Peppers</band>
+			</record>
+			<record>
+				<id>4</id>
+				<first_name>Josh</first_name>
+				<last_name>Klinghoffer</last_name>
+				<band>Red Hot Chili Peppers</band>
+			</record>
+			<record>
+				<id>5</id>
+				<first_name>Thomas</first_name>
+				<last_name>Mars</last_name>
+				<band>Phoenix</band>
+			</record>
+			<record>
+				<id>6</id>
+				<first_name>Deck</first_name>
+				<last_name>d'Arcy</last_name>
+				<band>Phoenix</band>
+			</record>
+			<record>
+				<id>7</id>
+				<first_name>Laurent</first_name>
+				<last_name>Brancowitz</last_name>
+				<band>Phoenix</band>
+			</record>
+			<record>
+				<id>8</id>
+				<first_name>Christian</first_name>
+				<last_name>Mazzalai</last_name>
+				<band>Phoenix</band>
+			</record>
+			<record>
+				<id>9</id>
+				<first_name>Thomas</first_name>
+				<last_name>Hedlund</last_name>
+				<band>Phoenix</band>
+			</record>
+			<record>
+				<id>10</id>
+				<first_name>Michael</first_name>
+				<last_name>Angelakos</last_name>
+				<band>Passion Pit</band>
+			</record>
+			<record>
+				<id>11</id>
+				<first_name>Ian</first_name>
+				<last_name>Hultquist</last_name>
+				<band>Passion Pit</band>
+			</record>
+			<record>
+				<id>12</id>
+				<first_name>Jeff</first_name>
+				<last_name>Apruzzese</last_name>
+				<band>Passion Pit</band>
+			</record>
+			<record>
+				<id>13</id>
+				<first_name>Xander</first_name>
+				<last_name>Singh</last_name>
+				<band>Passion Pit</band>
+			</record>
+			<record>
+				<id>14</id>
+				<first_name>Jimmy</first_name>
+				<last_name>Page</last_name>
+				<band>Led Zeppelin</band>
+			</record>
+			<record>
+				<id>15</id>
+				<first_name>Robert</first_name>
+				<last_name>Plant</last_name>
+				<band>Led Zeppelin</band>
+			</record>
+			<record>
+				<id>16</id>
+				<first_name>John Paul</first_name>
+				<last_name>Jones</last_name>
+				<band>Led Zeppelin</band>
+			</record>
+			<record>
+				<id>17</id>
+				<first_name>Jon</first_name>
+				<last_name>Bonham</last_name>
+				<band>Led Zeppelin</band>
+			</record>
+			<record>
+				<id>18</id>
+				<first_name>Kanye</first_name>
+				<last_name>West</last_name>
+				<band>Kanye West</band>
+			</record>
+			<record>
+				<id>19</id>
+				<first_name>Jay</first_name>
+				<last_name>Z</last_name>
+				<band>Jay-Z</band>
+			</record>
+			<record>
+				<id>20</id>
+				<first_name>a</first_name>
+				<last_name>a</last_name>
+				<band>a</band>
+			</record>
+		</records>
+	</table>
+	<table name="genre">
+		<columns>
+			<column name="id" blob="0" maxlength="" multiple_key="0" not_null="1" numeric="1" primary_key="1" table="genre" type="int" default="" unique_key="0" unsigned="0" zerofill="0" />
+			<column name="name" blob="0" maxlength="" multiple_key="0" not_null="1" numeric="0" primary_key="0" table="genre" type="string" default="" unique_key="0" unsigned="0" zerofill="0" />
+			<column name="info" blob="1" maxlength="" multiple_key="0" not_null="1" numeric="0" primary_key="0" table="genre" type="blob" default="" unique_key="0" unsigned="0" zerofill="0" />
+		</columns>
+		<records>
+			<record>
+				<id>1</id>
+				<name>Alternative</name>
+				<info>Hipster Noise</info>
+			</record>
+			<record>
+				<id>2</id>
+				<name>Rock</name>
+				<info>For you classics out there</info>
+			</record>
+			<record>
+				<id>3</id>
+				<name>Hip Hop</name>
+				<info>Different from rap?</info>
+			</record>
+		</records>
+	</table>
+	<table name="performance">
+		<columns>
+			<column name="id" blob="0" maxlength="" multiple_key="0" not_null="1" numeric="1" primary_key="1" table="performance" type="int" default="" unique_key="0" unsigned="0" zerofill="0" />
+			<column name="day" blob="0" maxlength="" multiple_key="0" not_null="1" numeric="1" primary_key="0" table="performance" type="int" default="" unique_key="0" unsigned="0" zerofill="0" />
+			<column name="month" blob="0" maxlength="" multiple_key="0" not_null="1" numeric="1" primary_key="0" table="performance" type="int" default="" unique_key="0" unsigned="0" zerofill="0" />
+			<column name="year" blob="0" maxlength="" multiple_key="0" not_null="1" numeric="1" primary_key="0" table="performance" type="int" default="" unique_key="0" unsigned="0" zerofill="0" />
+			<column name="venue" blob="0" maxlength="" multiple_key="0" not_null="1" numeric="0" primary_key="0" table="performance" type="string" default="" unique_key="0" unsigned="0" zerofill="0" />
+			<column name="band" blob="0" maxlength="" multiple_key="0" not_null="1" numeric="0" primary_key="0" table="performance" type="string" default="" unique_key="0" unsigned="0" zerofill="0" />
+			<column name="tour" blob="0" maxlength="" multiple_key="0" not_null="1" numeric="0" primary_key="0" table="performance" type="string" default="" unique_key="0" unsigned="0" zerofill="0" />
+		</columns>
+		<records>
+		</records>
+	</table>
+	<table name="record_label">
+		<columns>
+			<column name="id" blob="0" maxlength="" multiple_key="0" not_null="1" numeric="1" primary_key="1" table="record_label" type="int" default="" unique_key="0" unsigned="0" zerofill="0" />
+			<column name="name" blob="0" maxlength="" multiple_key="0" not_null="1" numeric="0" primary_key="0" table="record_label" type="string" default="" unique_key="0" unsigned="0" zerofill="0" />
+			<column name="city" blob="0" maxlength="" multiple_key="0" not_null="1" numeric="0" primary_key="0" table="record_label" type="string" default="" unique_key="0" unsigned="0" zerofill="0" />
+			<column name="state" blob="0" maxlength="" multiple_key="0" not_null="1" numeric="0" primary_key="0" table="record_label" type="string" default="" unique_key="0" unsigned="0" zerofill="0" />
+		</columns>
+		<records>
+			<record>
+				<id>1</id>
+				<name>Columbia</name>
+				<city>New York</city>
+				<state>New York</state>
+			</record>
+			<record>
+				<id>2</id>
+				<name>Atlantic</name>
+				<city>Washington</city>
+				<state>District of Columbia</state>
+			</record>
+			<record>
+				<id>3</id>
+				<name>Glassnote</name>
+				<city>London</city>
+				<state>England</state>
+			</record>
+			<record>
+				<id>4</id>
+				<name>Def Jam</name>
+				<city>New York</city>
+				<state>New York</state>
+			</record>
+			<record>
+				<id>5</id>
+				<name>Warner Bros.</name>
+				<city>Burbank</city>
+				<state>California</state>
+			</record>
+		</records>
+	</table>
+	<table name="song">
+		<columns>
+			<column name="id" blob="0" maxlength="" multiple_key="0" not_null="1" numeric="1" primary_key="1" table="song" type="int" default="" unique_key="0" unsigned="0" zerofill="0" />
+			<column name="name" blob="0" maxlength="" multiple_key="0" not_null="1" numeric="0" primary_key="0" table="song" type="string" default="" unique_key="0" unsigned="0" zerofill="0" />
+			<column name="album" blob="0" maxlength="" multiple_key="0" not_null="1" numeric="0" primary_key="0" table="song" type="string" default="" unique_key="0" unsigned="0" zerofill="0" />
+			<column name="band" blob="0" maxlength="" multiple_key="0" not_null="1" numeric="0" primary_key="0" table="song" type="string" default="" unique_key="0" unsigned="0" zerofill="0" />
+			<column name="genre" blob="0" maxlength="" multiple_key="0" not_null="1" numeric="0" primary_key="0" table="song" type="string" default="" unique_key="0" unsigned="0" zerofill="0" />
+		</columns>
+		<records>
+			<record>
+				<id>1</id>
+				<name>Good Times Bad Times</name>
+				<album>Led Zeppelin</album>
+				<band>Led Zeppelin</band>
+				<genre>Rock</genre>
+			</record>
+			<record>
+				<id>2</id>
+				<name>Babe I'm Gonna Leave You</name>
+				<album>Led Zeppelin</album>
+				<band>Led Zeppelin</band>
+				<genre>Rock</genre>
+			</record>
+			<record>
+				<id>3</id>
+				<name>You Shook Me</name>
+				<album>Led Zeppelin</album>
+				<band>Led Zeppelin</band>
+				<genre>Rock</genre>
+			</record>
+			<record>
+				<id>4</id>
+				<name>Dazed and Confused</name>
+				<album>Led Zeppelin</album>
+				<band>Led Zeppelin</band>
+				<genre>Rock</genre>
+			</record>
+			<record>
+				<id>5</id>
+				<name>Your Time is Gonna Come</name>
+				<album>Led Zeppelin</album>
+				<band>Led Zeppelin</band>
+				<genre>Rock</genre>
+			</record>
+			<record>
+				<id>6</id>
+				<name>Black Mountain Side</name>
+				<album>Led Zeppelin</album>
+				<band>Led Zeppelin</band>
+				<genre>Rock</genre>
+			</record>
+			<record>
+				<id>7</id>
+				<name>Communication Breakdown</name>
+				<album>Led Zeppelin</album>
+				<band>Led Zeppelin</band>
+				<genre>Rock</genre>
+			</record>
+			<record>
+				<id>8</id>
+				<name>I Can't Quit You Baby</name>
+				<album>Led Zeppelin</album>
+				<band>Led Zeppelin</band>
+				<genre>Rock</genre>
+			</record>
+			<record>
+				<id>9</id>
+				<name>How Many More Times</name>
+				<album>Led Zeppelin</album>
+				<band>Led Zeppelin</band>
+				<genre>Rock</genre>
+			</record>
+			<record>
+				<id>10</id>
+				<name>The Song Remains the Same</name>
+				<album>Houses of the Holy</album>
+				<band>Led Zeppelin</band>
+				<genre>Rock</genre>
+			</record>
+			<record>
+				<id>11</id>
+				<name>The Rain Song</name>
+				<album>Houses of the Holy</album>
+				<band>Led Zeppelin</band>
+				<genre>Rock</genre>
+			</record>
+			<record>
+				<id>12</id>
+				<name>Over the Hills and Far Away</name>
+				<album>Houses of the Holy</album>
+				<band>Led Zeppelin</band>
+				<genre>Rock</genre>
+			</record>
+			<record>
+				<id>13</id>
+				<name>The Crunge</name>
+				<album>Houses of the Holy</album>
+				<band>Led Zeppelin</band>
+				<genre>Rock</genre>
+			</record>
+			<record>
+				<id>14</id>
+				<name>Dancing Days</name>
+				<album>Houses of the Holy</album>
+				<band>Led Zeppelin</band>
+				<genre>Rock</genre>
+			</record>
+			<record>
+				<id>15</id>
+				<name>D'yer Mak'er</name>
+				<album>Houses of the Holy</album>
+				<band>Led Zeppelin</band>
+				<genre>Rock</genre>
+			</record>
+			<record>
+				<id>16</id>
+				<name>No Quarter</name>
+				<album>Houses of the Holy</album>
+				<band>Led Zeppelin</band>
+				<genre>Rock</genre>
+			</record>
+			<record>
+				<id>17</id>
+				<name>The Ocean</name>
+				<album>Houses of the Holy</album>
+				<band>Led Zeppelin</band>
+				<genre>Rock</genre>
+			</record>
+			<record>
+				<id>18</id>
+				<name>Lisztomania</name>
+				<album>Wolfgang Amadeus Phoenix</album>
+				<band>Phoenix</band>
+				<genre>Alternative</genre>
+			</record>
+			<record>
+				<id>19</id>
+				<name>1901</name>
+				<album>Wolfgang Amadeus Phoenix</album>
+				<band>Phoenix</band>
+				<genre>Alternative</genre>
+			</record>
+			<record>
+				<id>20</id>
+				<name>Fences</name>
+				<album>Wolfgang Amadeus Phoenix</album>
+				<band>Phoenix</band>
+				<genre>Alternative</genre>
+			</record>
+			<record>
+				<id>21</id>
+				<name>Loves Like a Sunset</name>
+				<album>Wolfgang Amadeus Phoenix</album>
+				<band>Phoenix</band>
+				<genre>Alternative</genre>
+			</record>
+			<record>
+				<id>22</id>
+				<name>Lasso</name>
+				<album>Wolfgang Amadeus Phoenix</album>
+				<band>Phoenix</band>
+				<genre>Alternative</genre>
+			</record>
+			<record>
+				<id>23</id>
+				<name>Rome</name>
+				<album>Wolfgang Amadeus Phoenix</album>
+				<band>Phoenix</band>
+				<genre>Alternative</genre>
+			</record>
+			<record>
+				<id>24</id>
+				<name>Countdown</name>
+				<album>Wolfgang Amadeus Phoenix</album>
+				<band>Phoenix</band>
+				<genre>Alternative</genre>
+			</record>
+			<record>
+				<id>25</id>
+				<name>Girlfriend</name>
+				<album>Wolfgang Amadeus Phoenix</album>
+				<band>Phoenix</band>
+				<genre>Alternative</genre>
+			</record>
+			<record>
+				<id>26</id>
+				<name>Armistice</name>
+				<album>Wolfgang Amadeus Phoenix</album>
+				<band>Phoenix</band>
+				<genre>Alternative</genre>
+			</record>
+			<record>
+				<id>27</id>
+				<name>Everything Is Everything</name>
+				<album>Alphabetical</album>
+				<band>Phoenix</band>
+				<genre>Alternative</genre>
+			</record>
+			<record>
+				<id>28</id>
+				<name>Run Run Run</name>
+				<album>Alphabetical</album>
+				<band>Phoenix</band>
+				<genre>Alternative</genre>
+			</record>
+			<record>
+				<id>29</id>
+				<name>I'm an Actor</name>
+				<album>Alphabetical</album>
+				<band>Phoenix</band>
+				<genre>Alternative</genre>
+			</record>
+			<record>
+				<id>30</id>
+				<name>Love for Granted</name>
+				<album>Alphabetical</album>
+				<band>Phoenix</band>
+				<genre>Alternative</genre>
+			</record>
+			<record>
+				<id>31</id>
+				<name>Victim of the Crime</name>
+				<album>Alphabetical</album>
+				<band>Phoenix</band>
+				<genre>Alternative</genre>
+			</record>
+			<record>
+				<id>32</id>
+				<name>(You Can't Blame It On) Anybody</name>
+				<album>Alphabetical</album>
+				<band>Phoenix</band>
+				<genre>Alternative</genre>
+			</record>
+			<record>
+				<id>33</id>
+				<name>Congratulations</name>
+				<album>Alphabetical</album>
+				<band>Phoenix</band>
+				<genre>Alternative</genre>
+			</record>
+			<record>
+				<id>34</id>
+				<name>If It's Not with You</name>
+				<album>Alphabetical</album>
+				<band>Phoenix</band>
+				<genre>Alternative</genre>
+			</record>
+			<record>
+				<id>35</id>
+				<name>Holdin' on Together</name>
+				<album>Alphabetical</album>
+				<band>Phoenix</band>
+				<genre>Alternative</genre>
+			</record>
+			<record>
+				<id>36</id>
+				<name>Alphabetical</name>
+				<album>Alphabetical</album>
+				<band>Phoenix</band>
+				<genre>Alternative</genre>
+			</record>
+			<record>
+				<id>37</id>
+				<name>Make Light</name>
+				<album>Manners</album>
+				<band>Passion Pit</band>
+				<genre>Alternative</genre>
+			</record>
+			<record>
+				<id>38</id>
+				<name>Little Secrets</name>
+				<album>Manners</album>
+				<band>Passion Pit</band>
+				<genre>Alternative</genre>
+			</record>
+			<record>
+				<id>39</id>
+				<name>Moth's Wings</name>
+				<album>Manners</album>
+				<band>Passion Pit</band>
+				<genre>Alternative</genre>
+			</record>
+			<record>
+				<id>40</id>
+				<name>The Reeling</name>
+				<album>Manners</album>
+				<band>Passion Pit</band>
+				<genre>Alternative</genre>
+			</record>
+			<record>
+				<id>41</id>
+				<name>Eyes as Candles</name>
+				<album>Manners</album>
+				<band>Passion Pit</band>
+				<genre>Alternative</genre>
+			</record>
+			<record>
+				<id>42</id>
+				<name>Swimming in the Flood</name>
+				<album>Manners</album>
+				<band>Passion Pit</band>
+				<genre>Alternative</genre>
+			</record>
+			<record>
+				<id>43</id>
+				<name>Folds in Your Hands</name>
+				<album>Manners</album>
+				<band>Passion Pit</band>
+				<genre>Alternative</genre>
+			</record>
+			<record>
+				<id>44</id>
+				<name>To Kingdom Come</name>
+				<album>Manners</album>
+				<band>Passion Pit</band>
+				<genre>Alternative</genre>
+			</record>
+			<record>
+				<id>45</id>
+				<name>Sleepyhead</name>
+				<album>Manners</album>
+				<band>Passion Pit</band>
+				<genre>Alternative</genre>
+			</record>
+			<record>
+				<id>46</id>
+				<name>Let Your Love Grow Tall</name>
+				<album>Manners</album>
+				<band>Passion Pit</band>
+				<genre>Alternative</genre>
+			</record>
+			<record>
+				<id>47</id>
+				<name>Seaweed Song</name>
+				<album>Manners</album>
+				<band>Passion Pit</band>
+				<genre>Alternative</genre>
+			</record>
+			<record>
+				<id>48</id>
+				<name>Take a Walk</name>
+				<album>Gossamer</album>
+				<band>Passion Pit</band>
+				<genre>Alternative</genre>
+			</record>
+			<record>
+				<id>49</id>
+				<name>I'll Be Alright</name>
+				<album>Gossamer</album>
+				<band>Passion Pit</band>
+				<genre>Alternative</genre>
+			</record>
+			<record>
+				<id>50</id>
+				<name>Carried Away</name>
+				<album>Gossamer</album>
+				<band>Passion Pit</band>
+				<genre>Alternative</genre>
+			</record>
+			<record>
+				<id>51</id>
+				<name>Constant Conversations</name>
+				<album>Gossamer</album>
+				<band>Passion Pit</band>
+				<genre>Alternative</genre>
+			</record>
+			<record>
+				<id>52</id>
+				<name>Mirrored Sea</name>
+				<album>Gossamer</album>
+				<band>Passion Pit</band>
+				<genre>Alternative</genre>
+			</record>
+			<record>
+				<id>53</id>
+				<name>Cry Like a Ghost</name>
+				<album>Gossamer</album>
+				<band>Passion Pit</band>
+				<genre>Alternative</genre>
+			</record>
+			<record>
+				<id>54</id>
+				<name>On My Way</name>
+				<album>Gossamer</album>
+				<band>Passion Pit</band>
+				<genre>Alternative</genre>
+			</record>
+			<record>
+				<id>55</id>
+				<name>Hideaway</name>
+				<album>Gossamer</album>
+				<band>Passion Pit</band>
+				<genre>Alternative</genre>
+			</record>
+			<record>
+				<id>56</id>
+				<name>Two Veils to Hide My Face</name>
+				<album>Gossamer</album>
+				<band>Passion Pit</band>
+				<genre>Alternative</genre>
+			</record>
+			<record>
+				<id>57</id>
+				<name>Love is Greed</name>
+				<album>Gossamer</album>
+				<band>Passion Pit</band>
+				<genre>Alternative</genre>
+			</record>
+			<record>
+				<id>58</id>
+				<name>It's Not My Fault, I'm Happy</name>
+				<album>Gossamer</album>
+				<band>Passion Pit</band>
+				<genre>Alternative</genre>
+			</record>
+			<record>
+				<id>59</id>
+				<name>Where We Belong</name>
+				<album>Gossamer</album>
+				<band>Passion Pit</band>
+				<genre>Alternative</genre>
+			</record>
+		</records>
+	</table>
+	<table name="tour">
+		<columns>
+			<column name="id" blob="0" maxlength="" multiple_key="0" not_null="1" numeric="1" primary_key="1" table="tour" type="int" default="" unique_key="0" unsigned="0" zerofill="0" />
+			<column name="name" blob="0" maxlength="" multiple_key="0" not_null="1" numeric="0" primary_key="0" table="tour" type="string" default="" unique_key="0" unsigned="0" zerofill="0" />
+			<column name="band" blob="0" maxlength="" multiple_key="0" not_null="1" numeric="0" primary_key="0" table="tour" type="string" default="" unique_key="0" unsigned="0" zerofill="0" />
+			<column name="year" blob="0" maxlength="" multiple_key="0" not_null="1" numeric="1" primary_key="0" table="tour" type="int" default="" unique_key="0" unsigned="0" zerofill="0" />
+		</columns>
+		<records>
+		</records>
+	</table>
+	<table name="user">
+		<columns>
+			<column name="id" blob="0" maxlength="" multiple_key="0" not_null="1" numeric="1" primary_key="1" table="user" type="int" default="" unique_key="0" unsigned="0" zerofill="0" />
+			<column name="username" blob="0" maxlength="" multiple_key="0" not_null="1" numeric="0" primary_key="0" table="user" type="string" default="" unique_key="0" unsigned="0" zerofill="0" />
+			<column name="password" blob="0" maxlength="" multiple_key="0" not_null="1" numeric="0" primary_key="0" table="user" type="string" default="" unique_key="0" unsigned="0" zerofill="0" />
+		</columns>
+		<records>
+		</records>
+	</table>
+	<table name="venue">
+		<columns>
+			<column name="id" blob="0" maxlength="" multiple_key="0" not_null="1" numeric="1" primary_key="1" table="venue" type="int" default="" unique_key="0" unsigned="0" zerofill="0" />
+			<column name="name" blob="0" maxlength="" multiple_key="0" not_null="1" numeric="0" primary_key="0" table="venue" type="string" default="" unique_key="0" unsigned="0" zerofill="0" />
+			<column name="city" blob="0" maxlength="" multiple_key="0" not_null="1" numeric="0" primary_key="0" table="venue" type="string" default="" unique_key="0" unsigned="0" zerofill="0" />
+			<column name="state" blob="0" maxlength="" multiple_key="0" not_null="1" numeric="0" primary_key="0" table="venue" type="string" default="" unique_key="0" unsigned="0" zerofill="0" />
+		</columns>
+		<records>
+			<record>
+				<id>2</id>
+				<name>a</name>
+				<city>b</city>
+				<state>c</state>
+			</record>
+			<record>
+				<id>3</id>
+				<name>d</name>
+				<city>e</city>
+				<state>f</state>
+			</record>
+		</records>
+	</table>
+</database>
