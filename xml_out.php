@@ -63,8 +63,7 @@ if(mysql_num_rows($result))
 	
 	//save file
 	$handle = fopen($name.'.xml','w+');
-	echo $handle;
 	fwrite($handle,$xml);
-	
+	//echo $handle;
 	header('Location: ./'.$name.'.xml');
 }?>
