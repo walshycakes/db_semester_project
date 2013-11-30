@@ -71,7 +71,7 @@
 
 			</select>
 			<br>
-			<button id="submit2" type="submit" class="btn btn-primary" onClick="location.href('./random_playlist.php')">Generate Playlist</button>
+			<button id="submit2" type="submit" class="btn btn-primary" onClick="location.href='./random_playlist.php'">Generate Playlist</button>
 			</div>
 
 		<div class="span3" style="float:left" id="xml_buttons">
