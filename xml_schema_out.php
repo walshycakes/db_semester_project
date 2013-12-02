@@ -2,8 +2,8 @@
 // database constants
 // make sure the information is correct
 define("DB_SERVER", "stardock.cs.virginia.edu");
-define("DB_USER", "cs4750bpw7xx");
-define("DB_PASS", "Q3[.kGfw");
+define("DB_USER", "cs4750bpw7xxa");
+define("DB_PASS", "fall2013");
 define("DB_NAME", "cs4750bpw7xx");
 
 // connection to the database 

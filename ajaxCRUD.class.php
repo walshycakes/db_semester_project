@@ -1564,7 +1564,8 @@ class ajaxCRUD{
                                             }
 
 											$table_html .= $this->makeAjaxEditor($id, $field, $cell_value, 'text', $field_length, $cell_data, $field_onKeyPress);
-										}
+								    
+                                        }
                                     }
                                 }
                             }

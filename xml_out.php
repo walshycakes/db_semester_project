@@ -1,8 +1,8 @@
 <?php
 //connect
 $host = "stardock.cs.virginia.edu";
-$user = "cs4750bpw7xx";
-$pass = "Q3[.kGfw";
+$user = "cs4750bpw7xxa";
+$pass = "fall2013";
 $name = "cs4750bpw7xx";
 $link = mysql_connect($host,$user,$pass);
 mysql_select_db($name,$link);

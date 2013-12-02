@@ -47,6 +47,7 @@ function sndUpdateReq(action) {
     http.open('get', action);
     http.onreadystatechange = handleUpdateResponse;
     http.send(null);
+    
 }
 
 function getThisPage(){
@@ -262,7 +263,7 @@ function ajax_deleteRow(id, table, pk){
 //TODO: make function name less generic
 function handleUpdateResponse() {
     if(http.readyState == 4){
-
+    	
         var return_string = http.responseText;
 
         //if there's an error in the update
@@ -303,6 +304,7 @@ function handleUpdateResponse() {
             //hide editing and saving sections
             document.getElementById(id+'_edit').style.display = 'none';
             document.getElementById(id+'_save').style.display = 'none';
+
         }
     }
 }
